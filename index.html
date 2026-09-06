@@ -263,10 +263,8 @@
             <div class="flex flex-wrap gap-3 mb-10 justify-center">
                 <button class="filter-btn filter-active border border-primary px-4 py-2 rounded" data-filter="all">全部</button>
                 <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="original">原味系列</button>
-                <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="sandwich">夹心系列</button>
-                <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="mix">拌饭海苔</button>
-                <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="roll">海苔卷</button>
-                <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="gift">礼盒装</button>
+                <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="sushi">寿司系列</button>
+                <button class="filter-btn border border-primary px-4 py-2 rounded" data-filter="crispy">海苔脆片</button>
             </div>
             <div id="product-wrap" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- js渲染产品卡片 -->
@@ -321,16 +319,11 @@ function goPage(pageName,anchorId){
 
 //产品数据
 const productList = [
-    {title:"原味即食海苔",tag:"热卖",cat:"original",desc:"薄脆鲜香独立小袋",spec:"24g/袋",img:"https://picsum.photos/id/1080/420/320"},
-    {title:"大片装原味海苔",tag:"经典",cat:"original",desc:"大片即食海苔",spec:"30g/包",img:"https://picsum.photos/id/1084/420/320"},
-    {title:"芝麻夹心海苔",tag:"新品",cat:"sandwich",desc:"芝麻夹心，多层脆感",spec:"40g/罐",img:"https://picsum.photos/id/1081/420/320"},
-    {title:"巴旦木夹心海苔",tag:"热卖",cat:"sandwich",desc:"果仁夹心，儿童零食",spec:"42g/罐",img:"https://picsum.photos/id/1085/420/320"},
-    {title:"南瓜子夹心海苔",tag:"",cat:"sandwich",desc:"坚果与海苔融合",spec:"40g/罐",img:"https://picsum.photos/id/1086/420/320"},
-    {title:"拌饭海苔碎原味",tag:"经典",cat:"mix",desc:"饭团、拌饭神器",spec:"100g/袋",img:"https://picsum.photos/id/1082/420/320"},
-    {title:"肉松拌饭海苔碎",tag:"新品",cat:"mix",desc:"咸香肉松海苔碎",spec:"120g/袋",img:"https://picsum.photos/id/1087/420/320"},
-    {title:"肉松海苔卷",tag:"热卖",cat:"roll",desc:"海苔包裹肉松，网红零食",spec:"80g/桶",img:"https://picsum.photos/id/1083/420/320"},
-    {title:"虾松海苔卷",tag:"",cat:"roll",desc:"鲜香虾松内馅",spec:"75g/桶",img:"https://picsum.photos/id/1088/420/320"},
-    {title:"海苔礼盒套装",tag:"送礼",cat:"gift",desc:"多口味组合礼盒，节日礼品",spec:"8罐装礼盒",img:"https://picsum.photos/id/1089/420/320"},
+    {title:"本场寿司海苔",tag:"热卖",cat:"original",desc:"特级本场寿司海苔，用于寿司制作",spec:"50g/包",img:"images/sushi-nori-classic.jpg"},
+    {title:"本场寿司海苔 大片装",tag:"经典",cat:"original",desc:"大片即食海苔，鲜香轻薄",spec:"30g/包",img:"images/sushi-nori-large.jpg"},
+    {title:"焙诺寿司海苔",tag:"新品",cat:"sushi",desc:"专业寿司海苔，香脆可口",spec:"20P/包",img:"images/peinuo-sushi-nori.jpg"},
+    {title:"寿司海苔 家庭装",tag:"热卖",cat:"sushi",desc:"家庭装寿司海苔，美味吃不停",spec:"10片/袋",img:"images/sushi-nori-family.jpg"},
+    {title:"果蔬海苔脆",tag:"零食",cat:"crispy",desc:"果蔬夹心海苔脆片，健康零食",spec:"80g/袋",img:"images/fruit-veggie-crispy.jpg"},
 ]
 
 //渲染产品
